@@ -43,6 +43,11 @@ const delNum = () => {
         console.log('operation',op);
     }
     else{
+        let digToBeDeleted = fNum[fNum.length-1]
+        console.log(digToBeDeleted);
+        if( digToBeDeleted == '.'){
+            decimal = false
+        }
         fNum =  fNum.slice(0,-1)
         input.innerText = fNum
         console.log(fNum);
